@@ -15,6 +15,7 @@ module "storage_account" {
   location                 = azurerm_resource_group.tf_demo_rg.location
   account_tier             = var.storage_account_tier
   account_replication_type = var.storage_account_replication
+  allow_nested_items_to_be_public = var.allow_nested_items_to_be_public
 
   tags = var.tags 
 }

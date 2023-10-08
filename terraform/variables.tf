@@ -10,6 +10,10 @@ variable "storage_account_replication" {
     default = "LRS"
 }
 
+variable "allow_nested_items_to_be_public" {
+    default = "True"
+}
+
 variable "tags" {
   default = {
     environment = "dev"
